@@ -1,12 +1,10 @@
-package com.achilles.pattern.Singleton;
+package com.achilles.pattern.singleton;
 
 public class Singleton {
     //volatile
     private volatile static Singleton uniqueInstance;
-
     private Singleton() {
     }
-
     public static Singleton getInstance() {
         if (uniqueInstance == null) {
             synchronized (Singleton.class) {
